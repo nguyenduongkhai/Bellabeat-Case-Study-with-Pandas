@@ -61,6 +61,6 @@ The calories is mainly focus from 1500 to 4000 corresponding fairy active minute
 
 ![Calories and TotalStep](https://user-images.githubusercontent.com/58326661/159027233-50c27c0b-d99f-4903-867b-58eb66cf2a60.png)
 
-While , Total Step mainly focus from 0 to 20K per day.
+There are postive relationship between Calories and Total Step.With Calores from 1500 to 4000 Total Step mainly focus from 0 to 20K per day.
 
 
