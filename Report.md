@@ -49,36 +49,18 @@ len(weightLogInfo_merged.Id.unique()) # 8
 ```
 There are 33 users ID recorded in Activity, Calores and Steps file while there are 24 users Id in SleepDay and only 8 in Log Infor. Only 8 users Id is not enough to make good suggestions based on this data.
 
-Now, look at summary statistics of the dataset:
+Look at distribution between Calories and active minutes of Daily Activity Data
 
-```Python
-dailyActivity_merged.loc[:,['TotalSteps','TotalDistance','VeryActiveMinutes',
-                            'FairlyActiveMinutes','LightlyActiveMinutes','SedentaryMinutes','Calories']]
-                            .describe()
-```
-![image](https://user-images.githubusercontent.com/58326661/159008732-60887efe-14ae-4351-a0cb-da11b97681ff.png)
+![Calories and minutes](https://user-images.githubusercontent.com/58326661/159021203-ff84030d-a172-40c1-84ee-3ca1906a0394.png)
 
-```Python
-hourlyCalories_merged.Calories.describe()
-```
-![image](https://user-images.githubusercontent.com/58326661/159008826-ff68c531-1159-48bc-98ea-18337cdda37e.png)
 
-```Python
-hourlySteps_merged.StepTotal.describe()
-```
-![image](https://user-images.githubusercontent.com/58326661/159009477-00a06a2a-0b49-4c24-b740-253828d91e81.png)
-
-```Python
-sleepDay_merged.TotalMinutesAsleep.describe()
-```
-![image](https://user-images.githubusercontent.com/58326661/159009500-5a698c24-425c-4fdb-86d3-a60b6ddd8e2f.png)
-
-```Python
-weightLogInfo_merged.loc[:,['WeightKg','BMI']].describe()
-```
-![image](https://user-images.githubusercontent.com/58326661/159009545-9f9ed163-bf9d-4d84-8bca-bc1556b7c3d9.png)
+The calories is mainly focus from 1500 to 4000 corresponding fairy active minutes from 0 -> 80 mins, lightly active minutes is 0->500, sendentary minutes is 550 -> 1450 mins, and very active minutes is from 0-> 120 mins 
 
 
 
+
+![Calories and TotalStep](https://user-images.githubusercontent.com/58326661/159027233-50c27c0b-d99f-4903-867b-58eb66cf2a60.png)
+
+While , Total Step mainly focus from 0 to 20K per day.
 
 
