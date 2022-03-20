@@ -64,3 +64,41 @@ The calories is mainly focus from 1500 to 4000 corresponding fairy active minute
 There are postive relationship between Calories and Total Step.With Calores from 1500 to 4000 Total Step mainly focus from 0 to 20K per day.
 
 
+Now, look at the summary of Total Steps, Total Distacne and active minutes.
+``` Python
+# Activity
+average_user_dailyActivity = dailyActivity_merged.groupby('Id')[['TotalSteps','TotalDistance','VeryActiveMinutes',
+                                                              'FairlyActiveMinutes','LightlyActiveMinutes',
+                                                              'SedentaryMinutes','Calories']].mean()
+average_user_dailyActivity.describe()
+
+# Sleep
+sleepDay_average = sleepDay_merged.groupby('Id')[['TotalSleepRecords', 'TotalMinutesAsleep','TotalTimeInBed']].mean()
+sleepDay_average.describe()
+
+# Weight
+weight_average = weightLogInfo_merged.groupby('Id')[['BMI','WeightKg']].mean()
+weight_average.describe()
+```
+ 
+ ![image](https://user-images.githubusercontent.com/58326661/159144048-cf502323-33e2-407a-b09b-79ee307fc4a9.png)
+ 
+ ![image](https://user-images.githubusercontent.com/58326661/159145511-14ce2240-7a08-49be-af3e-979f5ae034a7.png)
+ 
+ ![image](https://user-images.githubusercontent.com/58326661/159144152-3c4c49e3-08b5-418a-a915-80414fc90675.png)     
+
+
+Before going to summary the data, firstly, I grouped the same Id because I belived it increases accurately of dataset instead summary all of dataset.
+There are some interesting points, from this summary:
+
+Average sedentary minutes nearly 1000 minutes, more than 16 hours. Should be reduced
+
+Sendentary occurs most of minutes in the active minutes.
+
+The CDC recommend that most adults aim for 10,000 steps per day but the average step is 7500. Need to improve !
+
+The average sleep per day is 380 mins corresponding 6 hours a day. 
+
+
+ 
+
