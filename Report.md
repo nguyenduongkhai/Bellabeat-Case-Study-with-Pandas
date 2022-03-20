@@ -100,5 +100,6 @@ The CDC recommend that most adults aim for 10,000 steps per day but the average 
 The average sleep per day is 380 mins corresponding 6 hours a day. 
 
 
+
  
 
