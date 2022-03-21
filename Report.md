@@ -17,7 +17,7 @@ import pandas as pd
 Loading CSV file
  For this project, I will use Fitbit Fitness Tracker [Data](https://www.kaggle.com/arashnic/fitbit)
  
-Data used: Daily Activity, Hourly Calories, Hourly Intensities, Sleep Day, Heart Rate, Weight Log Infor.
+Data used: Daily Activity, Hourly Calories, Hourly Step, Sleep Day, Heart Rate, Weight Log Infor.
 
 ``` Python
 dailyActivity_merged = pd.read_csv(path + 'dailyActivity_merged.csv')
@@ -100,6 +100,27 @@ The CDC recommend that most adults aim for 10,000 steps per day but the average 
 The average sleep per day is 380 mins corresponding 6 hours a day. 
 
 
+Visualazation
 
- 
+Before visualizing the data, I want to make a column named the day_of_week in Daily Activity and hour from Hourly Step.
+```Python
+dailyActivity_merged['day_of_week'] = (pd.to_datetime(dailyActivity_merged.ActivityDate)
+                                                                          .dt.dayofweek) + 2
+hourlySteps_merged['hour'] = pd.to_datetime(hourlySteps_merged.ActivityHour).dt.hour
+```
+The reason, I plus to 2 to day_of_week is Pandas sets the Monday is 0 and Sunday is 6. But, in my culture, Monday is start a number 2. That's why 2 is added in to my code.
+
+![Very Actiminutes per day of week](https://user-images.githubusercontent.com/58326661/159218449-825019d3-30d3-4ff5-bb57-fb84d9572fe6.png)
+Active minutes reaches a peak on a Monday then starting to drop to the bottom on Thursday and it is recovered on Saturday but drop after a Sunday.
+
+![Calories and Total Steps per day of week](https://user-images.githubusercontent.com/58326661/159219155-fe6c48dd-9a0c-4e9d-8165-ed0810e549d1.png)
+The chart shows a strong relationship between Calories and Steps per day of week through both increase and decrease together. While both reaches a top on Tuesday and Saturday, Calories drop a bottom on Thursday and Total Step is on Sunday
+
+
+![Total Step  over time](https://user-images.githubusercontent.com/58326661/159219240-d8dae87b-0bae-4302-a144-8f6fab5b6068.png)
+The total step is rising from 5:00 and then reaches a top at 19:00 and start to drop from this hour.
+
+Recommendation
+
+
 
