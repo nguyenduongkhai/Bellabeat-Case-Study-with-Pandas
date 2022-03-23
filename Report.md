@@ -107,17 +107,21 @@ The calories is mainly focus from 1500 to 4000 corresponding fairy active minute
 ![Calories and TotalStep](https://user-images.githubusercontent.com/58326661/159027233-50c27c0b-d99f-4903-867b-58eb66cf2a60.png)
 
 There are postive relationship between Calories and Total Step.With Calores from 1500 to 4000 Total Step mainly focus from 0 to 20K per day.
+
 ![Very Actiminutes per day of week](https://user-images.githubusercontent.com/58326661/159218449-825019d3-30d3-4ff5-bb57-fb84d9572fe6.png)
+
 Active minutes reaches a peak on a Monday then starting to drop to the bottom on Thursday and it is recovered on Saturday but drop after a Sunday.
 
 ![Calories and Total Steps per day of week](https://user-images.githubusercontent.com/58326661/159219155-fe6c48dd-9a0c-4e9d-8165-ed0810e549d1.png)
+
 The chart shows a strong relationship between Calories and Steps per day of week through both increase and decrease together. While both reaches a top on Tuesday and Saturday, Calories drop a bottom on Thursday and Total Step is on Sunday
 
 
 ![Total Step  over time](https://user-images.githubusercontent.com/58326661/159219240-d8dae87b-0bae-4302-a144-8f6fab5b6068.png)
+
 The total step is rising from 5:00 and then reaches a top at 19:00 and start to drop from this hour.
 
-Recommendation
+#### Recommendation
 
 
 
