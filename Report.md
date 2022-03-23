@@ -39,7 +39,7 @@ dailyActivity_merged.isnull().sum()
 ```
 I found it, there are 65 missing value of "Fat" columns in Weight Log Infor. Howerver, I did not go further to deep Weight data, just remains unchaged it.
 
-Explore and Summary Data
+#### Explore and Summary Data
 ```Python
 len(dailyActivity_merged.Id.unique()) # 33
 len(hourlyCalories_merged.Id.unique()) # 33
@@ -49,19 +49,7 @@ len(weightLogInfo_merged.Id.unique()) # 8
 ```
 There are 33 users ID recorded in Activity, Calores and Steps file while there are 24 users Id in SleepDay and only 8 in Log Infor. Only 8 users Id is not enough to make good suggestions based on this data.
 
-Look at distribution between Calories and active minutes of Daily Activity Data
 
-![Calories and minutes](https://user-images.githubusercontent.com/58326661/159021203-ff84030d-a172-40c1-84ee-3ca1906a0394.png)
-
-
-The calories is mainly focus from 1500 to 4000 corresponding fairy active minutes from 0 -> 80 mins, lightly active minutes is 0->500, sendentary minutes is 550 -> 1450 mins, and very active minutes is from 0-> 120 mins 
-
-
-
-
-![Calories and TotalStep](https://user-images.githubusercontent.com/58326661/159027233-50c27c0b-d99f-4903-867b-58eb66cf2a60.png)
-
-There are postive relationship between Calories and Total Step.With Calores from 1500 to 4000 Total Step mainly focus from 0 to 20K per day.
 
 
 Now, look at the summary of Total Steps, Total Distacne and active minutes.
@@ -91,25 +79,34 @@ weight_average.describe()
 Before going to summary the data, firstly, I grouped the same Id because I belived it increases accurately of dataset instead summary all of dataset.
 There are some interesting points, from this summary:
 
-Average sedentary minutes nearly 1000 minutes, more than 16 hours. Should be reduced
+ Average sedentary minutes nearly 1000 minutes, more than 16 hours. Should be reduced
 
-Sendentary occurs most of minutes in the active minutes.
+ Sendentary occurs most of minutes in the active minutes.
 
-The CDC recommend that most adults aim for 10,000 steps per day but the average step is 7500. Need to improve !
+ The CDC recommend that most adults aim for 10,000 steps per day but the average step is 7500. Need to improve !
 
-The average sleep per day is 380 mins corresponding 6 hours a day. 
+ The average sleep per day is 380 mins corresponding 6 hours a day. 
 
 
-Visualazation
+#### Visualazation
 
 Before visualizing the data, I want to make a column named the day_of_week in Daily Activity and hour from Hourly Step.
 ```Python
 dailyActivity_merged['day_of_week'] = (pd.to_datetime(dailyActivity_merged.ActivityDate)
-                                                                          .dt.dayofweek) + 2
+                                                                          .dt.dayofweek) 
 hourlySteps_merged['hour'] = pd.to_datetime(hourlySteps_merged.ActivityHour).dt.hour
 ```
-The reason, I plus to 2 to day_of_week is Pandas sets the Monday is 0 and Sunday is 6. But, in my culture, Monday is start a number 2. That's why 2 is added in to my code.
 
+Look at distribution between Calories and active minutes of Daily Activity Data
+
+![Calories and minutes](https://user-images.githubusercontent.com/58326661/159021203-ff84030d-a172-40c1-84ee-3ca1906a0394.png)
+
+
+The calories is mainly focus from 1500 to 4000 corresponding fairy active minutes from 0 -> 80 mins, lightly active minutes is 0->500, sendentary minutes is 550 -> 1450 mins, and very active minutes is from 0-> 120 mins 
+
+![Calories and TotalStep](https://user-images.githubusercontent.com/58326661/159027233-50c27c0b-d99f-4903-867b-58eb66cf2a60.png)
+
+There are postive relationship between Calories and Total Step.With Calores from 1500 to 4000 Total Step mainly focus from 0 to 20K per day.
 ![Very Actiminutes per day of week](https://user-images.githubusercontent.com/58326661/159218449-825019d3-30d3-4ff5-bb57-fb84d9572fe6.png)
 Active minutes reaches a peak on a Monday then starting to drop to the bottom on Thursday and it is recovered on Saturday but drop after a Sunday.
 
