@@ -2,28 +2,27 @@
 
 #### Author: Nguyen Duong Khai
 
-##### Introduction
-
 ##### [Dashboard]()
 
 ##### [Presentation]()
 
 
-# Table of Contents 
+# 
+The project follow the steps of the data analysis process : 
 
 ### [Ask](#1-Ask)
 ### [Prepare](#2-Prepare)
 ### [Process](#3-Process)
 ### [Analyzie](#4-Analyze)
-### [Share](#5 Share)
+### [Share](#5-Share)
 ### [Act](#6-Act)
 
 ## Introduction
 
 Bellabeat is a high-tech manufacturer of healthy focused products for women. It includes bellabeat app which provide users data relate to their activity, sleep, stress and mindfulness habits and wellness tracker devices such as watch, or necklet used to connect to beallbeat app checking health information. In addition , the product provide a water bottle exams water intake every day. When connected to Beallabeat, users could know their hydration levels. The Bellabeat member is allowed to access the app  24/7 to be helped on nutrition, activity, sleep and beauty, and mindfulness based on their lifestyle and goals. Since it was established in 2013, Bellabeat has a rapid growth about a teach-driven wellness company for women. One of the reason, they has invested traditional advertising media, such as radio, out-of-home billboards, print, and television, but focuses on digital marketing extensively. Sršen , Bellabeat’s cofounder and Chief Creative Officer, knows that an analysis of Bellabeat’s available consumer data would reveal more opportunities for growth. She has asked the marketing analytics team to focus on a Bellabeat product and analyze smart device usage data to gain insight into how people are already using their smart devices
 
-#### 1/ Ask
-Business task: Working as a data analysist, I should identify trends in smart device usage and apply these trends to Bella Product. Then, suggest marketing strategy to help Bellabeat.
+## 1/ Ask
+**Business task**: Working as a data analysist, I should identify trends in smart device usage and apply these trends to Bella Product. Then, suggest marketing strategy to help Bellabeat.
 
 ##### Importing Datasets 
 Loading package
