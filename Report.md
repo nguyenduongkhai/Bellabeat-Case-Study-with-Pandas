@@ -106,38 +106,32 @@ There are some interesting points, from this summary:
 - The average sleep per day is 380 mins corresponding 6 hours a day. 
 
 
-## 5/ Visualization
+### Visualization
 
 
-Look at distribution between Calories and active minutes of Daily Activity Data
-
-
-The calories is mainly focus from 1500 to 4000 corresponding fairy active minutes from 0 -> 80 mins, lightly active minutes is 0->500, sendentary minutes is 550 -> 1450 mins, and very active minutes is from 0-> 120 mins 
-
-
-There are postive relationship between Calories and Total Step.With Calores from 1500 to 4000 Total Step mainly focus from 0 to 20K per day.
-
-
-Active minutes reaches a peak on a Monday then starting to drop to the bottom on Thursday and it is recovered on Saturday but drop after a Sunday.
-
-
-The chart shows a strong relationship between Calories and Steps per day of week through both increase and decrease together. While both reaches a top on Tuesday and Saturday, Calories drop a bottom on Thursday and Total Step is on Sunday
-
-
-
-The total step is rising from 5:00 and then reaches a top at 19:00 and start to drop from this hour.
 
 ![Calories and active mins](https://user-images.githubusercontent.com/58326661/159988545-79b333d9-6c99-46de-8323-57ca234ea040.png)
 
-![Calories and Total Steps per day of week](https://user-images.githubusercontent.com/58326661/159989208-ed612306-5033-4cf1-a29b-ba98e54d88f3.png)
-
-![Intensity vs Hour](https://user-images.githubusercontent.com/58326661/159988744-3c952d1f-8f66-428a-b76b-041d74a43f5b.png)
+The calories is mainly focus from 1500 to 4000 corresponding fairy active minutes from 0 -> 80 mins, lightly active minutes is 0->500, sendentary minutes is 550 -> 1450 mins, and very active minutes is from 0-> 120 mins 
 
 ![Very active minutes per day of week](https://user-images.githubusercontent.com/58326661/159988804-4fcb8d89-78ee-468e-8e67-a7a9ef76c172.png)
 
+Active minutes reaches a peak on a Monday then starting to drop to the bottom on Thursday and it is recovered on Saturday but drop after a Sunday.
+
+![Calories and Total Steps per day of week](https://user-images.githubusercontent.com/58326661/159989208-ed612306-5033-4cf1-a29b-ba98e54d88f3.png)
+
+The chart shows a strong relationship between Calories and Steps per day of week through both increase and decrease together. While both reaches a top on Tuesday and Saturday, Calories drop a bottom on Thursday and Total Step is on Sunday
+
+![Intensity vs Hour](https://user-images.githubusercontent.com/58326661/159988744-3c952d1f-8f66-428a-b76b-041d74a43f5b.png)
+
+
+The Intensity is rising from 5:00 and then reaches a top at 19:00 and start to drop from this hour.It reaches a peach between 6 and 7 pm. Based on this time, we encourage users consuming more energy by going to gym or play sports or exercises.
+
 ![Sleep vs Sendentary Mintues](https://user-images.githubusercontent.com/58326661/159988920-25bd8a19-d83e-4789-936f-4d865600e11a.png)
 
-#### Recommendation
+There are a negative relationship between Sleep and Sendentary Minutes. To improve better sleep, Bella users must reduce sedentary minutes.
+
+## 5 / Sharing 
 
 
 
