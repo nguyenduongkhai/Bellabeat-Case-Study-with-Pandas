@@ -133,5 +133,9 @@ There are a negative relationship between Sleep and Sendentary Minutes. To impro
 
 ## 5 / Sharing 
 
+![Bella_Dashboard](https://user-images.githubusercontent.com/58326661/160078841-e9f90326-1b0c-4094-9282-e71c2498a514.png)
+
+## 6/ Act
+
 
 
