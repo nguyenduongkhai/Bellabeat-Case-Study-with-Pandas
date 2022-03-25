@@ -4,7 +4,7 @@
 
 ##### [Dashboard](https://public.tableau.com/views/Bella_16475280530160/Bella_Dashboard?:language=en-GB&:display_count=n&:origin=viz_share_link)
 
-##### [Jupiter]()
+##### [Jupiter](Fitbit_Data_Analysis.ipynb)
 
 # 
 The project follow the steps of the data analysis process : 
