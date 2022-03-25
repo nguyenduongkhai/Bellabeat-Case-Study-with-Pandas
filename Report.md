@@ -2,10 +2,7 @@
 
 #### Author: Nguyen Duong Khai
 
-##### [Dashboard]()
-
-##### [Presentation]()
-
+##### [Dashboard](https://public.tableau.com/views/Bella_16475280530160/Bella_Dashboard?:language=en-GB&:display_count=n&:origin=viz_share_link)
 
 # 
 The project follow the steps of the data analysis process : 
@@ -93,7 +90,6 @@ Now, look at the summary of Total Steps, Total Distacne and active minutes.
 ![image](https://user-images.githubusercontent.com/58326661/159964361-ca20f717-a314-481d-8ad0-2ef37fef5750.png)
 
 
-
 Before going to summary the data, firstly, I grouped the same Id because I belived it increases accurately of dataset instead summary all of dataset.
 There are some interesting points, from this summary:
 
@@ -104,6 +100,11 @@ There are some interesting points, from this summary:
 - The CDC recommend that most adults aim for 10,000 steps per day but the average step is 7500. Need to improve !
 
 - The average sleep per day is 380 mins corresponding 6 hours a day. 
+
+![image](https://user-images.githubusercontent.com/58326661/160088421-63fe9550-6614-49d6-97e5-25630cf858d9.png)
+
+42 mins is the diffenrece between the time in bed and the time feel asleep
+
 
 
 ### Visualization
@@ -137,5 +138,13 @@ There are a negative relationship between Sleep and Sendentary Minutes. To impro
 
 ## 6/ Act
 
+After analyzing dataset, I found some insight data which could help the company have a some markerting strategy
 
+### Target Audience
 
+More than 16 hours for sedentary minutes desmonstrates the women spends a lot of time in front of computer to work and only spends 20 mins for active minutes . It means  they seems not to excercise. Hence, the company need to have a nice strategy encourage users to stay healthy. 
+
+Recommendation for the Bellbeat Apps:
+- Send the totification to their phone a list of task  per day such as have an average step 8000 everyday
+- To improve a better sleep, the app need to warm users reduce a sendentary minutes or a time lying the bed for social media.  
+- Encourage a gym or play sport on 18:00 - 19:00 to improve their healthy instead of other time, because in this time, they consume a lot of intenssity.
